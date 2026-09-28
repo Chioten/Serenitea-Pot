@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="C_test.vcxproj" />
+  <Project Path="PrimeCheck.vcxproj" />
 </Solution>

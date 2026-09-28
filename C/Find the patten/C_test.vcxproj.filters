@@ -18,5 +18,8 @@
     <ClCompile Include="Find the pattern in a rhombus.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Prime check.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
