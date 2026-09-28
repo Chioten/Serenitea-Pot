@@ -3,9 +3,9 @@
 int main(void) {
 	int n;
 	scanf("%d", &n);
-	int total = n * 2 + 1;
+	int total = n * 2 + 1;       //上下两行总行数
 	for (int i = 1; i <= total;i++) {
-		int d;
+		int d;//距离中间层有几行
 		if (i <= n + 1) {
 			d = (n + 1) - i;
 		}
