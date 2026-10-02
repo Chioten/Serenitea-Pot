@@ -16,8 +16,9 @@
 
 | # | 程序 | 文件 |
 | --- | --- | --- |
-| 1 | Find the pattern in a rhombus | [Find the pattern in a rhombus.c](C/Find the pattern/Find the pattern in a rhombus.c) |
-| 2 | PrimeCheck | [PrimeCheck.c](C/PrimeCheck/PrimeCheck.c) |
+| 1 | Devide numbers | [Devide numbers.c](C/Devide numbers/Devide numbers.c) |
+| 2 | Find the pattern in a rhombus | [Find the pattern in a rhombus.c](C/Find the pattern/Find the pattern in a rhombus.c) |
+| 3 | PrimeCheck | [PrimeCheck.c](C/PrimeCheck/PrimeCheck.c) |
 
 <!-- AUTO:END -->
 
