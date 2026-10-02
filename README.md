@@ -17,8 +17,9 @@
 | # | 程序 | 文件 |
 | --- | --- | --- |
 | 1 | Devide numbers | [Devide numbers.c](C/Devide numbers/Devide numbers.c) |
-| 2 | Find the pattern in a rhombus | [Find the pattern in a rhombus.c](C/Find the pattern/Find the pattern in a rhombus.c) |
-| 3 | PrimeCheck | [PrimeCheck.c](C/PrimeCheck/PrimeCheck.c) |
+| 2 | Fallen ball | [Fallen ball.c](C/Fallen ball/Fallen ball.c) |
+| 3 | Find the pattern in a rhombus | [Find the pattern in a rhombus.c](C/Find the pattern/Find the pattern in a rhombus.c) |
+| 4 | PrimeCheck | [PrimeCheck.c](C/Prime Check/PrimeCheck.c) |
 
 <!-- AUTO:END -->
 
