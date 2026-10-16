@@ -19,9 +19,10 @@
 | 1 | Devide numbers | [Devide numbers.c](C/Devide numbers/Devide numbers.c) |
 | 2 | Fallen ball | [Fallen ball.c](C/Fallen ball/Fallen ball.c) |
 | 3 | Find the pattern in a rhombus | [Find the pattern in a rhombus.c](C/Find the pattern/Find the pattern in a rhombus.c) |
-| 4 | PrimeCheck | [PrimeCheck.c](C/Prime Check/PrimeCheck.c) |
-| 5 | Reduce_Fraction | [Reduce_Fraction.c](C/Reduce_Fraction/Reduce_Fraction.c) |
-| 6 | Three_digit_numbers | [Three_digit_numbers.c](C/Three_digit_numbers/Three_digit_numbers.c) |
+| 4 | P5738_Luogu_singing_match | [P5738_Luogu_singing_match.c](C/P5738_Luogu_singing_match/P5738_Luogu_singing_match.c) |
+| 5 | PrimeCheck | [PrimeCheck.c](C/Prime Check/PrimeCheck.c) |
+| 6 | Reduce_Fraction | [Reduce_Fraction.c](C/Reduce_Fraction/Reduce_Fraction.c) |
+| 7 | Three_digit_numbers | [Three_digit_numbers.c](C/Three_digit_numbers/Three_digit_numbers.c) |
 
 <!-- AUTO:END -->
 
