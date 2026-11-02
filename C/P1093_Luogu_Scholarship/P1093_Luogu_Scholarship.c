@@ -11,10 +11,10 @@ int main() {
 			stu[i][4] += stu[i][j];
 		}
 	}
-	for (int i = 1;i <= n - 1;i++) {
-		for (int j = 1;j <= n - i - 1;j++) {
+	for (int i = 0;i < n - 1;i++) {
+		for (int j = 0;j < n - i - 1;j++) {
 			int need = 0;
-			if (stu[j][4] < stu[j + 1]) {
+			if (stu[j][4] < stu[j + 1][4]) {
 				need = 1;
 			}
 			else if (stu[j][4] == stu[j + 1][4] && stu[j][1] < stu[j + 1][1]) {
