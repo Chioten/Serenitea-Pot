@@ -1,12 +1,15 @@
-﻿# update-readme.ps1 - regenerate the AUTO block in README.md
+# update-readme.ps1 - regenerate the AUTO block in README.md
 # Called by 一键上传.cmd before git add.
 $ErrorActionPreference = 'Stop'
 $tools = Split-Path -Parent $MyInvocation.MyCommand.Path
 $root  = Split-Path -Parent $tools
 Set-Location $root
 
+# 只收真正的作业/练习代码：排除虚拟环境、IDE 配置、编译产物、依赖包
+$exclude = '\\\.git\\|\\\.venv\\|\\__pycache__\\|\\\.idea\\|\\node_modules\\|\\site-packages\\|\\\.vs\\|\\Debug\\|\\Release\\|\\x64\\'
+
 $files = Get-ChildItem -Path $root -Recurse -File -Include *.c,*.cpp,*.py,*.java,*.js -ErrorAction SilentlyContinue |
-         Where-Object { $_.FullName -notmatch '\\\.git\\' } |
+         Where-Object { $_.FullName -notmatch $exclude } |
          Sort-Object FullName
 
 $out = New-Object System.Collections.Generic.List[string]

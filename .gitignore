@@ -76,3 +76,9 @@ x86/
 # ½Å±¾±¸·Ý
 *.bak-*
 *.bak
+.venv/
+__pycache__/
+*.pyc
+.idea/
+*.iml
+node_modules/
