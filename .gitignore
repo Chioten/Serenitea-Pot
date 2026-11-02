@@ -72,3 +72,7 @@ x86/
 *.db-shm
 *.db-wal
 *.ilk
+
+# ½Å±¾±¸·Ý
+*.bak-*
+*.bak
