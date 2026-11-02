@@ -1,0 +1,56 @@
+@echo off
+title 一键上传作业到 GitHub
+cd /d "%~dp0"
+
+REM 自动定位到 git 仓库根目录（脚本放哪都行）
+for /f "delims=" %%r in ('git rev-parse --show-toplevel 2^>nul') do cd /d "%%r"
+
+echo =========================================
+echo    一键上传作业到 GitHub
+echo =========================================
+echo.
+
+echo [1/5] 看看改了什么...
+git status --short
+echo.
+
+echo [2/5] 更新 README 作业清单...
+if not exist "tools\update-readme.ps1" goto noreadme
+powershell -NoProfile -ExecutionPolicy Bypass -File "tools\update-readme.ps1"
+goto step3
+:noreadme
+echo   （没找到 tools\update-readme.ps1，跳过）
+:step3
+echo.
+
+echo [3/5] 暂存所有改动...
+git add .
+
+git diff --cached --quiet
+if %errorlevel%==0 goto nocommit
+
+echo [4/5] 提交...
+if exist "commit-message.txt" goto usefile
+powershell -NoProfile -Command "Get-Date -Format yyyy-MM-dd_HHmm | Out-File -Encoding ascii -FilePath $env:TEMP\opencode-dt.txt"
+set /p DT=<"%TEMP%\opencode-dt.txt"
+git commit -m "update: %DT%"
+goto upload
+
+:usefile
+echo   使用 commit-message.txt 里的说明
+git commit -F "commit-message.txt"
+goto upload
+
+:nocommit
+echo   没有新改动，直接上传。
+
+:upload
+echo.
+echo [5/5] 上传中... 第一次会弹浏览器，点 Authorize 就行
+git push
+echo.
+echo ---- 最近 3 次提交 ----
+git log --oneline -3
+echo.
+echo 完成！按任意键关闭。
+pause >nul
